@@ -1,0 +1,56 @@
+
+body {
+  background-color: white;
+  display: flex;
+  text-align: center;
+  flex-flow: wrap;
+
+}
+#link_bar, .header_one, .content_class, .technologies_one, .other_skills, #contained_in_page, footer {
+  flex: 1 100%;
+}
+#link_bar {
+  background-color: gray;
+}
+.header_one {
+  background-color: turquoise;
+}
+
+.content_class {
+  background-color: tomato;
+}
+.technologies_one {
+  background-color: darkblue;
+  color: white;
+}
+.other_skills {
+  background-color: lightblue;
+}
+#contained_in_page {
+    background-color: gold;
+}
+footer {
+  background-color: lightgreen;
+  /*display: block;*/
+
+}
+
+@media all and (min-width: 500px) {
+  .row1, .row2 {flex: auto}
+  /*.row2 {flex: 1 auto;}*/
+  /*.row1 {flex: 1 auto;}
+  .row2 {flex: 1 auto;}*/
+
+}
+
+@media all and (min-width: 700px) {
+  .item1, .item2 {flex: 50%}
+
+
+  .row2 {flex: auto}
+}
+
+a:hover {
+
+
+}
