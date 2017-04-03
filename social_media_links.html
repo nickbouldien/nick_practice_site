@@ -8,76 +8,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
     <meta name="author" content="Nick Bouldien">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <style>
+        /* not good practice to put CSS here.  will put in the index.css file*/
+
+        .imgsize {
+            height: 200px;
+            width: 200px;
+            display: block;
+            margin: auto;
+        }
+    </style>
 </head>
 
 
 <body>
-  <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse ">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!--  navbar navbar-fixed-top navbar-inverse bg-inverse-->
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse ">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">nick.com</a>
+        <a class="navbar-brand" href="#">nick.com</a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="./home.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./other_page.html">"Other Page"</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Win a million dollars</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search for Nothing">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 
 
 
 
     <div class="container">
 
-    <h1>Hello, world!</h1>
-
-      <div class="row ">
-        <div class=" col-sm-6">
-          1 of 2
+        <div class="jumbotron ">
+            <!-- didn't like the look of jumbotron-fluid -->
+            <h1 class="display-3">Welcome to the Bootstrap page!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to going back to the nick.com home page. (no JavaScript on this page)</p>
+            <hr class="my-4">
+            <p>Click button below to go back home</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="./home.html" role="button">Home page</a>
+            </p>
         </div>
-        <div class=" col-sm-6">
-          2 of 2
+
+
+
+
+        <h3 class="card-header">Social Media Links</h3>
+        <div class="row">
+
+            <div class="col-sm-4">
+                <!-- Not using class="card-group" yet since bootstrap documentation says they are not yet res ** note to self: try out card=deck (without the column/row divs).  perhaps has better responsiveness than the current setup.  the images get messed up-->
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top imgsize center-block" src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">LinkedIn</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go to my LinkedIn profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top imgsize" src="https://assets-cdn.github.com/images/modules/open_graph/github-logo.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">LinkedIn</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go to my GitHub profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top imgsize" src=" " alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">??</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go to my ?? profile</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <P>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        <br>
+        <br>
+        <!-- Note to self: probably can find better than using page breaks... -->
 
-Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+                <form>
+                    <h5>Practice getting user email for email list (that doesn't exist)</h5>
+                    <div class="form-group row">
+                        <!-- class="form-inline -->
+                        <label for="exampleInputEmail1" class="col-sm-2">Email address</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email here">
+                            <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else (unless somebody offers me a lot of money for it).</small>
+                        </div>
+                    </div>
 
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    <div class="form-group row">
+                        <label for="exampleInputPassword1" class="col-sm-2">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                    </div>
 
-1914 translation by H. Rackham
+                    <!-- <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+              </div> -->
 
-"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <!-- <div class="alert alert-success" role="alert">
+                      <strong>Well done!</strong> You successfully read this important alert message.
+                    </div> use on successful sign up-->
+                </form>
 
-Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 
-"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+                <!-- Button trigger modal -->
+                <p> Small modal to allow you to clink and have me say "thank you for visiting my page"</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Thank you</button>
 
-1914 translation by H. Rackham
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Hello</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        "thank you for visiting my page"
+                        -nick
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
-</p>
 
-      </div>
+        <!-- just stuff I was playing around with: columns (the grid), adding a bunch of lorem ipsum to test the nav bar fixed at the top, etc.
+        <div class="row ">
+            <div class=" col-sm-6">
+                1 of 2
+            </div>
+            <div class=" col-sm-6">
+                2 of 2
+            </div>
+
+            <P>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Section 1.10.32 of "de Finibus Bonorum et
+                Malorum", written by Cicero in 45 BC "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+            </p>
+
+        </div>
+
+      -->
     </div>
 
 
